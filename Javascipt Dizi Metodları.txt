@@ -1,0 +1,11 @@
+Javascript Dizi Metodları
+
+Pop Metodu : Dizinin Son Elemanını Çıkartmak İçin Kullanılır..
+
+Shift Metdodu : Pop Tersi Shift Diziyi Sola kaydırmak için kullanılır..
+
+Push Metodu : Diziye ekleme yapmak için kullanılır..
+
+Concat : Dizileri birleştirmek - toplamak için kullanılır..
+
+mouseover mouse ile üzerine gelme
