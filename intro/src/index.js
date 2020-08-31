@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'alertifyjs/build/css/alertify.min.css';
+import 'alertifyjs/build/css/themes/semantic.min.css';
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root') // public altındaki root a render ediyor.
+    <React.StrictMode>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root') // public altındaki root a render ediyor.
 );
 
 // If you want your app to work offline and load faster, you can change

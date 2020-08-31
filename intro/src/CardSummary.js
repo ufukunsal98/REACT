@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown, Badge} from "reactstrap";
+import {Badge, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown} from "reactstrap";
+import {Link} from "react-router-dom";
 
 class CardSummary extends Component {
 
@@ -15,12 +16,17 @@ class CardSummary extends Component {
                             cardItem => (
                                 <DropdownItem key={cardItem.product.id}>
                                     {cardItem.product.productName}
-                                    <Badge color="danger" className="float-right">X</Badge>
+                                    <Badge color="danger" className="float-right"
+                                           onClick={() => this.props.removeFromCart(cardItem)}>X</Badge>
                                     <Badge color="primary" className="float-right">{cardItem.quantity}</Badge>
                                 </DropdownItem>
                             )
                         )
                     }
+                    <DropdownItem divider/>
+                    <DropdownItem>
+                        <Link to="cart">See Cart</Link>
+                    </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
         );

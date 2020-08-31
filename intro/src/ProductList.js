@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import {Table , Button} from "reactstrap";
+import {Button, Table} from "reactstrap";
 
 class ProductList extends Component {
-    state = {
-    }
-
+    state = {}
 
 
     render() {
@@ -36,7 +34,7 @@ class ProductList extends Component {
                                     <td>{product.unitPrice}</td>
                                     <td>{product.unitsInStock}</td>
                                     <td>
-                                        <Button color="info" onClick={()=>this.props.addToCard(product)}>Add</Button>{' '}
+                                        <Button color="info" onClick={() => this.props.addToCard(product)}>Add</Button>{' '}
                                     </td>
                                 </tr>
                             )

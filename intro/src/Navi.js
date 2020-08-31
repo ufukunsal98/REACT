@@ -1,18 +1,5 @@
-import React, { useState } from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-} from 'reactstrap';
+import React, {useState} from 'react';
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarText, NavbarToggler, NavItem, NavLink} from 'reactstrap';
 import CardSummary from "./CardSummary";
 
 const Navi = (props) => {
@@ -24,7 +11,7 @@ const Navi = (props) => {
         <div>
             <Navbar color="light" light expand="md">
                 <NavbarBrand href="/">reactstrap</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
+                <NavbarToggler onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
@@ -33,7 +20,7 @@ const Navi = (props) => {
                         <NavItem>
                             <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                         </NavItem>
-                        <CardSummary cart = {props.cart}/>
+                        <CardSummary cart={props.cart} removeFromCart={props.removeFromCart}/>
                     </Nav>
                     <NavbarText>Simple Text</NavbarText>
                 </Collapse>
