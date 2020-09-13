@@ -3,3 +3,23 @@ Json Server
 
 React Routing İçin 
 npm i react-router-dom
+
+Redux actions bizim operasyonlarımız aksiyonlarımızdır
+
+redux için
+ 	npm i redux
+	npm i react-redux
+kurulmalı.
+
+ActionTypes uygulama içindeki aksiyonlarımızı yazıyoruz
+
+reducer in amacı state bilgisini döndürmektir.
+// ************* çok önemli reducerin amacı state bilgisini döndürmektir..
+// Uygulamamıza bir Aksiyonu bağlamak için dispatch kullanırız
+
+combine reducer -> elimizde bulunan tüm reducerleri birleştirmek için kullanılır
+
+react veritabanı işlemlerinde redux thunk yapısı karşımıza çıkmaktadır...
+senkron asenkron yapılarda yan etkileri engellemek için redux-thunk kullanırız
+
+componentDidMount -> ngOnInit gibi angulardaki
