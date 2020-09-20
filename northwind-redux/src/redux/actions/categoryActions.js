@@ -14,7 +14,7 @@ export function getCategoriesSuccess(categories) {
 export function getCategories() {
     return function (dispatch) {
 
-        let url = "http://localhost:3000/categories";
+        let url = "http://localhost:3004/categories";
         fetch(url).then(response => response.json()).then(
             response => {
                 dispatch(getCategoriesSuccess(response))//  dispatch yakalamak demek
